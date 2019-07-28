@@ -1,0 +1,84 @@
+body {
+    margin-top: 0;
+    width: 100%;
+}
+
+hr {
+    color: transparent;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #91aec1; 
+}
+
+
+h4 {
+    font-family: Helvetica;
+    font-size: 24px;
+}
+
+h5 {
+    font-family: Helvetica;
+    text-align: center;
+}
+
+/* Header & Navigasi Section */
+
+header {
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: #f1f1f1;
+}
+
+li {
+    text-align: left;
+    display: inline-block;
+    text-indent: 10px;
+    font-weight: 500;
+}
+
+/* Timeline */
+
+section {
+    margin: 10px;
+    padding: 100px;
+}
+
+#timeline {
+    margin: 0 50px;
+}
+
+.time {
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: 3px;
+}
+
+
+/* contact Section */
+
+#contact {
+    background-color: #f1f1f1;
+    padding: 100px 50px;
+    height: 200px;
+    text-align: center;
+}
+
+
+/* Footer Section */
+
+footer {
+    width: 100%;
+    border: 0;
+    padding: 20px 0;
+    color: #f1f1f1;
+    background-color: #3d3b3c;
+}
