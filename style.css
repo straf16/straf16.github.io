@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 h4 {
     font-family: Helvetica;
     font-size: 24px;
@@ -31,7 +35,7 @@ header {
 
 .navigation {
     text-align: center;
-    background-color: goldenrod;
+    background-color: #91aec1;
 }
 
 .box {
@@ -44,9 +48,9 @@ header {
 }
 
 .box:hover {
-    color: #F76C5E;
-    background-color: gold;
-    border-color: #F76C5E;
+    color: #3d3b3c;
+    background-color: #bfd7ea;
+    border-color: #3d3b3c;
 }
 
 /* Portfolio */
@@ -64,7 +68,7 @@ section {
 
 /* contact Section */
 
-.contact {
+#contact {
     background-color: #f1f1f1;
     padding: 100px 50px;
     height: 200px;
