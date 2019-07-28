@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+h4 {
+    font-family: Helvetica;
+    font-size: 24px;
+}
+
+h5 {
+    font-family: Helvetica;
+    text-align: center;
+}
+
+/* Header & Banner Section */
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #f1f1f1;
+}
+
+#banner {
+    background-color: #f1f1f1;
+    padding: 50px;
+    height: 200px;
+    text-align: center;
+}
+
+/* Navigation Section */
+
+.navigation {
+    text-align: center;
+    background-color: goldenrod;
+}
+
+.box {
+    color: white;
+    border: 2px lightgray solid;
+    border-radius: 5px;
+    margin: 30px;
+    display: inline-block;
+    padding: 100px;
+}
+
+.box:hover {
+    color: #F76C5E;
+    background-color: gold;
+    border-color: #F76C5E;
+}
+
+/* Portfolio */
+
+section {
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.article-list {
+    text-align: left;
+    padding: 10px 100px;
+}
+
+/* contact Section */
+
+.contact {
+    background-color: #f1f1f1;
+    padding: 100px 50px;
+    height: 200px;
+    text-align: center;
+}
+
+
+/* Footer Section */
+
+footer {
+    width: 100%;
+    border: 0;
+    padding: 20px 0;
+    color: #f1f1f1;
+    background-color: #3d3b3c;
+}
