@@ -1,5 +1,6 @@
 body {
-    margin: 0;
+    margin-top: 0;
+    width: 100%;
 }
 
 a:link {
@@ -11,6 +12,7 @@ a:hover {
     color: #91aec1; 
 }
 
+
 h4 {
     font-family: Helvetica;
     font-size: 24px;
@@ -21,54 +23,52 @@ h5 {
     text-align: center;
 }
 
-/* Header & Banner Section */
+/* Header & Navigasi Section */
 
 header {
     width: 100%;
+    z-index: 10;
     position: fixed;
     background-color: #f1f1f1;
 }
 
-#banner {
-    background-color: #f1f1f1;
-    padding: 50px;
-    height: 200px;
-    text-align: center;
-}
-
-/* Navigation Section */
-
-.navigation {
-    text-align: center;
-    background-color: #91aec1;
-}
-
-.box {
-    color: white;
-    border: 2px lightgray solid;
-    border-radius: 5px;
-    margin: 30px;
+li {
+    text-align: left;
     display: inline-block;
+    text-indent: 10px;
+    font-weight: 500;
+}
+
+/* Profile */
+
+img {
+    border: 2px lightgray solid;
+    border-radius: 10px;
+}
+
+.data {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 30% auto;
+    line-height: 50px;
+}
+
+section {
+    margin: 10px;
     padding: 100px;
 }
 
-.box:hover {
-    color: #3d3b3c;
-    background-color: #bfd7ea;
-    border-color: #3d3b3c;
-}
-
-/* Portfolio */
-
-section {
-    margin: 20px;
-    padding: 50px;
+.cv {
+    width: 30%;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
-.article-list {
-    text-align: left;
-    padding: 10px 100px;
+.cv:hover {
+    background-color: #f1f1f1;;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 /* contact Section */
