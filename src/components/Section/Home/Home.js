@@ -9,7 +9,7 @@ const styles = {
   },
   text: {
     fontSize: '14px',
-    color: '#000000'
+    color: '#111111'
   },
   textHighlight: {
     fontSize: '16px',
