@@ -1,12 +1,7 @@
 import React from 'react'
+import './Header.scss'
 
 const styles = {
-  headerWrapper: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    padding: '24px 48px'
-  },
   logo: {
     fontWeight: 800,
     fontSize: '32px',
@@ -31,9 +26,9 @@ const styles = {
 
 const Header = () => {
   return (
-    <div style={styles.headerWrapper}>
+    <div className="header-wrapper">
       <div style={styles.logo}>F.</div>
-      <div style={styles.headerMenu}>
+      <div className="header-menu">
         <span style={styles.headerMenuItem}>HOME</span>
         <span style={styles.headerMenuItem}>SKILLS</span>
         <span style={styles.headerMenuItem}>JOURNEY</span>
