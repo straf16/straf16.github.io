@@ -47,12 +47,23 @@
 }
 
 .button {
+  cursor: pointer;
   padding: 16px 24px;
   border-radius: 8px;
   background-color: #1d9bf0;
   border: none;
   color: white;
   font-weight: bold;
+
+  &:hover {
+    opacity: 80%;
+  }
+}
+
+.photo {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .photo-profile {
@@ -60,6 +71,8 @@
 }
 
 .scroll-down {
+  position: absolute;
+  right: 8px;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -79,5 +92,9 @@
 
   .scroll-down-text {
     margin-bottom: 6px;
+  }
+
+  @media screen and (max-width: 380px) {
+    display: none;
   }
 }

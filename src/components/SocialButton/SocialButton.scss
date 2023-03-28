@@ -2,3 +2,11 @@
   display: flex;
   gap: 18px;
 }
+
+.social-icon {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 80%;
+  }
+}
