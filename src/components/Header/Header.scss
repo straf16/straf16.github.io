@@ -1,0 +1,17 @@
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 48px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  background-color: #EFEFEF;
+  z-index: 1;
+}
+
+.header-menu {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
