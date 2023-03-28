@@ -16,7 +16,7 @@ describe('App Testing', () => {
     expect(component.find('div').hasClass('App')).toEqual(true);
   })
 
-  test('render App to have children', () => {
+  test('render App to have children component', () => {
     expect(component.find('div').children()).toHaveLength(3)
   })
 })
