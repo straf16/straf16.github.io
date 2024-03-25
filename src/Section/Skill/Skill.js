@@ -3,7 +3,7 @@ import './Skill.scss'
 
 const Skill = () => {
   return (
-    <div className="wrapper">
+    <div id="skill-section" className="wrapper">
       <span className="title">Skill</span>
     </div>
   )

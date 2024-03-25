@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0 48px;
 }
 
 .description {
@@ -67,12 +68,12 @@
 }
 
 .photo-profile {
-  border-radius: 38px;
+  border-radius: 183px;
 }
 
 .scroll-down {
   position: absolute;
-  right: 8px;
+  right: 0;
   display: flex;
   gap: 8px;
   align-items: center;
