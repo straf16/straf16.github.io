@@ -6,7 +6,7 @@ import photoProfile from '../../assets/fadil.png'
 
 const Home = () => {
   return (
-    <div id="home-section" className="wrapper">
+    <div id="home-section" className="home-wrapper">
       <div className="content">
         <div className="description">
           <span className="subtitle">Hi there!</span>
