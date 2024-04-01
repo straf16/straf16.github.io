@@ -15,7 +15,9 @@ const styles = {
   headerMenuItem: {
     fontWeight: 600,
     fontSize: '16px',
-    color: '#111111'
+    color: '#111111',
+    cursor: 'pointer',
+    textDecoration: 'none',
   },
   headerMenuItemActive: {
     fontWeight: 'bold',
@@ -29,10 +31,10 @@ const Header = () => {
     <div className="header-wrapper">
       <div style={styles.logo}>F.</div>
       <div className="header-menu">
-        <span style={styles.headerMenuItem}>HOME</span>
-        <span style={styles.headerMenuItem}>SKILLS</span>
-        <span style={styles.headerMenuItem}>JOURNEY</span>
-        <span style={styles.headerMenuItem}>CONTACT</span>
+        <a href="#home-section" style={styles.headerMenuItem}>HOME</a>
+        <a href="#skill-section" style={styles.headerMenuItem}>SKILLS</a>
+        <a href="#journey-section" style={styles.headerMenuItem}>JOURNEY</a>
+        <a href="#contact-section" style={styles.headerMenuItem}>CONTACT</a>
       </div>
     </div>
   )
