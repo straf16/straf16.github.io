@@ -6,7 +6,7 @@ import photoProfile from '../../assets/fadil.png'
 
 const Home = () => {
   return (
-    <div id="home-section" className="home-wrapper">
+    <div id="home-section" className="section-wrapper">
       <div className="content">
         <div className="description">
           <span className="subtitle">Hi there!</span>
@@ -25,10 +25,10 @@ const Home = () => {
         <div className="photo">
           <img className="photo-profile" src={photoProfile} height={420} width={370} alt="whatsapp-icon" />
         </div>
-      </div>
-      <div className="scroll-down">
-        <span className="scroll-down-text">scroll down</span>
-        <img className="photo-profile" src={arrow} height={30} width={50} alt="arrow-down" />
+        <div className="scroll-down">
+          <span className="scroll-down-text">scroll down</span>
+          <img className="photo-profile" src={arrow} height={30} width={50} alt="arrow-down" />
+        </div>
       </div>
     </div>
   )

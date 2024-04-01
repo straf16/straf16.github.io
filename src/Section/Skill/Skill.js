@@ -13,7 +13,7 @@ import GraphqlLogo from '../../assets/graphql-logo.png';
 
 const Skill = () => {
   return (
-    <div id="skill-section" className="skill-wrapper">
+    <div id="skill-section" className="section-wrapper">
       <span className="section-title">SKILLS</span>
       <div className="list-logo">
         <img src={HTMLLogo} alt="html-logo" width={160} height={160} />

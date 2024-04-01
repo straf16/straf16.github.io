@@ -1,0 +1,99 @@
+.journey-list {
+  margin: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.job-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 70%;
+}
+
+.job-title-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-right: 48px;
+  min-height: 160px;
+  border-right: 2px #DDDDDD solid;
+}
+
+.job-title {
+  font-size: 18px;
+  margin: 0;
+  text-align: right;
+}
+
+.job-period {
+  font-size: 12px;
+  margin: 0;
+  text-align: right;
+  opacity: 60%;
+}
+
+.job-company {
+  display: flex;
+  flex-direction: column;
+  padding-left: 72px;
+}
+
+.company-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.education-title-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-right: 48px;
+  min-height: 120px;
+  border-right: 2px #DDDDDD solid;
+}
+
+.no-border {
+  border: none;
+}
+
+.course-title {
+  font-size: 14px;
+  margin: 0;
+  opacity: 60%;
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  margin: 12px 0;
+  border-bottom: 3px #1D9BF0 solid;
+}
+
+ul {
+  color: #111111;
+  opacity: 60%;
+  margin: 0 0 36px;
+  padding-inline-start: 24px;
+}
+
+.icon-container {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  background-color: #1D9BF0;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -21px;
+}

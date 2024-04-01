@@ -1,16 +1,9 @@
-.home-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
 .content {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0 48px;
+  position: relative;
 }
 
 .description {
@@ -78,7 +71,6 @@
   gap: 8px;
   align-items: center;
   align-self: flex-end;
-  margin-bottom: 100px;
   
   transform: rotate(90deg);
 
