@@ -2,6 +2,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.button {
+  cursor: pointer;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: #1d9bf0;
+  border: none;
+  color: white;
+  font-weight: bold;
+
+  &:hover {
+    opacity: 80%;
+  }
+}
+
 .section-wrapper {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,22 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 65%;
+}
+
+input, textarea {
+  box-sizing: border-box;
+  resize: none;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+
+  &::placeholder {
+    opacity: 60%;
+  }
+
+  &:focus {
+    outline-color: #1D9BF0;
+  }
+}
