@@ -12,10 +12,13 @@ const Home = () => {
           <span className="subtitle">Hi there!</span>
           <span className="title">I'm Fadil</span>
           <p className="text">
-            A passionate <span className="highlight">web developer</span> based in Indonesia
-            with over <span className="highlight">3 years</span> of experience.
-            Proficient in <span className="highlight">Javascript, React.js, and Next.js </span>
-            to build single-page apps and responsive web design.
+            <span className="highlight">Frontend Developer</span> with <span className="highlight">5+ years</span> of 
+            experience building responsive, user-friendly web and mobile applications.
+            Skilled in <span className="highlight">HTML</span>, <span className="highlight">CSS</span>,
+            <span className="highlight">JavaScript</span>, <span className="highlight">React.js</span>,
+            <span className="highlight">React Native</span>, and <span className="highlight">Next.js</span>,
+            with strong focus on performance optimization and modern UI/UX best practices. Based
+            in <span className="highlight">Jakarta, Indonesia</span>.
           </p>
           <div className="action">
             <button className="button">DOWNLOAD CV</button>

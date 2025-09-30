@@ -6,8 +6,26 @@ import linkedinIcon from '../../assets/linkedin.png'
 const SocialButton = () => {
   return (
     <div className='icon-wrapper'>
-      <img id="github-icon" className="social-icon" src={githubIcon} height={25} width={25} alt="github-icon" />
-      <img id="linkedin-icon" className="social-icon" src={linkedinIcon} height={25} width={25} alt="linkedin-icon" />
+      <a href="https://github.com/straf16">
+        <img
+          id="github-icon"
+          alt="github-icon"
+          className="social-icon"
+          src={githubIcon}
+          height={25}
+          width={25}
+        />
+      </a>
+      <a href="https://linkedin.com/in/ahmadfadilah">
+        <img
+          id="linkedin-icon"
+          alt="linkedin-icon"
+          className="social-icon"
+          src={linkedinIcon}
+          height={25}
+          width={25}
+        />
+      </a>
     </div>
   )
 }
