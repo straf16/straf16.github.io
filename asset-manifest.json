@@ -1,26 +1,30 @@
 {
   "files": {
     "main.css": "/static/css/main.cf11a550.css",
-    "main.js": "/static/js/main.9e1da4ec.js",
+    "main.js": "/static/js/main.7cdea541.js",
     "static/js/787.77fc82ea.chunk.js": "/static/js/787.77fc82ea.chunk.js",
     "static/media/fadil.png": "/static/media/fadil.6b6590a921f5f27eb8f9.png",
-    "static/media/react-logo.png": "/static/media/react-logo.8d0390aac122b54b1c95.png",
-    "static/media/graphql-logo.png": "/static/media/graphql-logo.e89d9f174fff5849759d.png",
-    "static/media/css-logo.png": "/static/media/css-logo.f18d09030c2c8bc61360.png",
-    "static/media/redux-logo.png": "/static/media/redux-logo.2376cc9a0ab4634b5be1.png",
-    "static/media/html-logo.png": "/static/media/html-logo.b1a152e9a0d3fa64073f.png",
     "static/media/github.png": "/static/media/github.6c5d8675c0948005e707.png",
-    "static/media/restapi-logo.png": "/static/media/restapi-logo.e611cfe190a3360e36ad.png",
-    "static/media/git-logo.png": "/static/media/git-logo.3a23ed3f3a5de261f1d9.png",
+    "static/media/react-native-logo.svg": "/static/media/react-native-logo.55360266b3781dae00a5a77c8916f82d.svg",
+    "static/media/react-logo.svg": "/static/media/react-logo.e68b35f4774979ae220b1d5d7b345b00.svg",
+    "static/media/redux-saga-logo.svg": "/static/media/redux-saga-logo.7020de63dcc408a69b7ab86392e5bd5f.svg",
+    "static/media/redux-logo.svg": "/static/media/redux-logo.0e4fb1c819ac4c060c92343147d4ccf7.svg",
+    "static/media/graphql-logo.svg": "/static/media/graphql-logo.488e5ca26ffde22d9a3d8925fce09070.svg",
+    "static/media/typescript-logo.svg": "/static/media/typescript-logo.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "static/media/school-icon.svg": "/static/media/school-icon.7e1ffa2443c720575dad248a23f42289.svg",
+    "static/media/git-logo.svg": "/static/media/git-logo.c60b7e5ae8ec2562f23fdddcab300026.svg",
     "static/media/job-icon.svg": "/static/media/job-icon.74e3932fbdb42c264cc08998f75abcfb.svg",
     "index.html": "/index.html",
+    "static/media/javascript-logo.svg": "/static/media/javascript-logo.f92687016638cc2ce7be650ae1ae8398.svg",
+    "static/media/css-logo.svg": "/static/media/css-logo.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/html-logo.svg": "/static/media/html-logo.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "static/media/vue-logo.svg": "/static/media/vue-logo.f04dfe30a8ad8eb5c4e01aaf1163cb53.svg",
     "main.cf11a550.css.map": "/static/css/main.cf11a550.css.map",
-    "main.9e1da4ec.js.map": "/static/js/main.9e1da4ec.js.map",
+    "main.7cdea541.js.map": "/static/js/main.7cdea541.js.map",
     "787.77fc82ea.chunk.js.map": "/static/js/787.77fc82ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf11a550.css",
-    "static/js/main.9e1da4ec.js"
+    "static/js/main.7cdea541.js"
   ]
 }
