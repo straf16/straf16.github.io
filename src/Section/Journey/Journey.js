@@ -12,6 +12,26 @@ const Journey = () => {
           <div className="job-list">
             <div className="job-title-wrapper">
               <p className="job-title">Frontend Developer</p>
+              <p className="job-period">Mei 2024 - Present</p>
+              <div className="icon-container">
+                <img alt="job-icon" src={JobIcon} />
+              </div>
+            </div>
+            <div className="job-company">
+              <p className="company-title">Mandala Multifinance</p>
+              <div className="divider" />
+              <ul className="job-desc">
+                <li>Upgraded React Native version from 0.65.3 to 0.74.5 on MPowerMobile, improving performance and stability across iOS and Android.</li>
+                <li>Revamped MPower App using Expo SDK 53, updating React & React Native versions and upgrading Google API level to 35.</li>
+                <li>Implemented reusable components in MPower Mobile, reducing development time and debugging effort.</li>
+                <li>Revamped Absen, Cuti, and Izin modules in MPower Mobile, integrating with the new HR management system (Peoplesoft API) to streamline approval processes.</li>
+                <li>Implemented root/jailbreak detector and anti-fake GPS features to address penetration test findings.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="job-list">
+            <div className="job-title-wrapper">
+              <p className="job-title">Frontend Developer</p>
               <p className="job-period">Mar 2022 -  Feb 2024</p>
               <div className="icon-container">
                 <img alt="job-icon" src={JobIcon} />
