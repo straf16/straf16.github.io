@@ -1,36 +1,49 @@
 import React from 'react'
 import './Home.scss'
 import SocialButton from '../../components/SocialButton/SocialButton'
-import arrow from '../../assets/arrow.png'
 import photoProfile from '../../assets/fadil.png'
 
 const Home = () => {
   return (
-    <div id="home-section" className="section-wrapper">
-      <div className="content">
-        <div className="description">
-          <span className="subtitle">Hi there!</span>
-          <span className="title">I'm Fadil</span>
-          <p className="text">
-            A passionate <span className="highlight">web developer</span> based in Indonesia
-            with over <span className="highlight">3 years</span> of experience.
-            Proficient in <span className="highlight">Javascript, React.js, and Next.js </span>
-            to build single-page apps and responsive web design.
+    <section id="home-section" className="section-wrapper hero-section">
+      <div className="hero-content">
+        <div className="hero-text">
+          <span className="hero-greeting">Hi there! 👋</span>
+          <h1 className="hero-name">
+            I'm <span className="gradient-text">Fadil</span>
+          </h1>
+          <h2 className="hero-role">Frontend Developer</h2>
+          <p className="hero-description">
+            A passionate web developer based in Indonesia
+            with over <strong>5 years</strong> of experience building
+            performant, responsive web applications with{' '}
+            <strong>React.js</strong> and <strong>Next.js</strong>.
           </p>
-          <div className="action">
-            <button className="button">DOWNLOAD CV</button>
-            <SocialButton />
+          <div className="hero-actions">
+            <a href="#projects-section" className="button button-primary">
+              View Projects
+            </a>
+            <a href="#contact-section" className="button button-outline">
+              Contact Me
+            </a>
+          </div>
+          <div className="hero-social">
+            <SocialButton size={22} />
           </div>
         </div>
-        <div className="photo">
-          <img className="photo-profile" src={photoProfile} height={420} width={370} alt="whatsapp-icon" />
-        </div>
-        <div className="scroll-down">
-          <span className="scroll-down-text">scroll down</span>
-          <img className="photo-profile" src={arrow} height={30} width={50} alt="arrow-down" />
+        <div className="hero-photo-wrapper">
+          <div className="hero-photo-ring">
+            <img
+              className="hero-photo"
+              src={photoProfile}
+              alt="Fadil — Frontend Developer"
+              loading="lazy"
+            />
+          </div>
+          <div className="hero-photo-glow" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

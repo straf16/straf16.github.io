@@ -1,99 +1,149 @@
-.journey-list {
-  margin: 48px;
+// ═══════════════════════════════════════
+// Journey Section — Mobile First Timeline
+// ═══════════════════════════════════════
+
+.journey-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: var(--spacing-3xl);
+}
+
+.journey-group {
   width: 100%;
 }
 
-.job-list-wrapper {
+.journey-group-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+// Timeline
+.timeline {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: var(--spacing-lg);
+}
+
+.timeline-item {
+  display: flex;
+  gap: var(--spacing-md);
+
+  @media (min-width: 769px) {
+    gap: var(--spacing-lg);
+  }
+}
+
+// Timeline marker (dot + line)
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 24px;
-  width: 100%;
+  flex-shrink: 0;
 }
 
-.job-list {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  width: 70%;
-}
-
-.job-title-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-right: 48px;
-  min-height: 160px;
-  border-right: 2px #DDDDDD solid;
-}
-
-.job-title {
-  font-size: 18px;
-  margin: 0;
-  text-align: right;
-}
-
-.job-period {
-  font-size: 12px;
-  margin: 0;
-  text-align: right;
-  opacity: 60%;
-}
-
-.job-company {
-  display: flex;
-  flex-direction: column;
-  padding-left: 72px;
-}
-
-.company-title {
-  font-size: 18px;
-  margin: 0;
-}
-
-.education-title-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-right: 48px;
-  min-height: 120px;
-  border-right: 2px #DDDDDD solid;
-}
-
-.no-border {
-  border: none;
-}
-
-.course-title {
-  font-size: 14px;
-  margin: 0;
-  opacity: 60%;
-}
-
-.divider {
-  width: 80px;
-  height: 3px;
-  margin: 12px 0;
-  border-bottom: 3px #1D9BF0 solid;
-}
-
-ul {
-  color: #111111;
-  opacity: 60%;
-  margin: 0 0 36px;
-  padding-inline-start: 24px;
-}
-
-.icon-container {
-  width: 24px;
-  height: 24px;
-  padding: 8px;
-  background-color: #1D9BF0;
+.timeline-dot {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  position: absolute;
-  top: 0;
-  right: -21px;
+  background: var(--color-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+
+  @media (min-width: 769px) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.timeline-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+
+  @media (min-width: 769px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.timeline-line {
+  width: 2px;
+  flex-grow: 1;
+  background: var(--color-border);
+  margin-top: var(--spacing-xs);
+}
+
+// Timeline content card
+.timeline-content {
+  padding: var(--spacing-lg);
+  flex-grow: 1;
+  margin-bottom: 0;
+
+  @media (min-width: 769px) {
+    padding: var(--spacing-lg) var(--spacing-xl);
+  }
+}
+
+.timeline-period {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-xs);
+  display: block;
+}
+
+.timeline-title {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--spacing-xs);
+
+  @media (min-width: 769px) {
+    font-size: var(--font-size-xl);
+  }
+}
+
+.timeline-company {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  display: block;
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-course {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-style: italic;
+  display: block;
+}
+
+.timeline-list {
+  margin-top: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+
+  li {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    padding-left: var(--spacing-md);
+    position: relative;
+
+    &::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+      font-size: var(--font-size-sm);
+    }
+  }
 }

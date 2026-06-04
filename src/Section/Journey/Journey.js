@@ -1,102 +1,144 @@
-import "./Journey.scss";
-import JobIcon from "../../assets/job-icon.svg";
-import SchoolIcon from "../../assets/school-icon.svg";
+import React from 'react'
+import './Journey.scss'
+import JobIcon from '../../assets/job-icon.svg'
+import SchoolIcon from '../../assets/school-icon.svg'
+
+const workExperience = [
+  {
+    title: 'Frontend Developer',
+    period: 'Mei 2024 - Present',
+    company: 'ADIRA Finance (formerly Mandala Multifinance)',
+    icon: JobIcon,
+    descriptions: [
+      'Upgraded React Native version from 0.65.3 to 0.74.5 on MPowerMobile, improving performance and stability across iOS and Android.',
+      'Revamped MPower App using Expo SDK 53, updating React & React Native versions and upgrading Google API level to 35.',
+      'Implemented reusable components in MPower Mobile, reducing development time and debugging effort.',
+      'Revamped Absen, Cuti, and Izin modules in MPower Mobile, integrating with the new HR management system (Peoplesoft API) to streamline approval processes.',
+      'Implemented root/jailbreak detector and anti-fake GPS features to address penetration test findings.',
+    ]
+  },
+  {
+    title: 'Frontend Developer',
+    period: 'Mar 2022 – Feb 2024',
+    company: 'Blue Bird Group',
+    icon: JobIcon,
+    descriptions: [
+      'Created KitBird Frontend UI Library that provides reusable component for UI Dashboard',
+      'Implemented pre-commit husky to prevent common mistakes and shorten review process',
+      'Implemented micro frontend for reservation website for faster deployment',
+      'Built Access Control List (ACL) in GoldenBird Dashboard to manage user access by role',
+      'Implemented Verdaccio as a private package library for micro frontend modules',
+    ],
+  },
+  {
+    title: 'Full Stack Engineer',
+    period: 'Apr 2020 – Nov 2021',
+    company: 'CUMI Marketplace',
+    icon: JobIcon,
+    descriptions: [
+      'Implemented new design on login and registration page improving user experience',
+      'Migrated PHP website into responsive single page app using ReactJS',
+      'Built item snapshot page integrated into inquiry for checkout data',
+      'Created help center page with popular articles for common user questions',
+      'Built shipping label with AnterAja delivery integration',
+    ],
+  },
+]
+
+const education = [
+  {
+    title: 'Undergraduate Student',
+    period: 'Nov 2023 – Present',
+    company: 'Binus University — Jakarta',
+    course: 'Information Systems',
+    icon: SchoolIcon,
+  },
+  {
+    title: 'Coding Bootcamp',
+    period: 'Jul 2019 – Dec 2019',
+    company: 'Hacktiv8 — Jakarta',
+    course: 'Full Stack Javascript Immersive',
+    icon: SchoolIcon,
+  },
+  {
+    title: 'High School Diploma',
+    period: 'Jul 2015 – May 2018',
+    company: 'SMAN 2 Depok — Jakarta',
+    course: 'Social Sciences',
+    icon: SchoolIcon,
+  },
+]
 
 const Journey = () => {
   return (
-    <div id="journey-section" className="section-wrapper">
-      <span className="section-title">JOURNEY</span>
-      <div className="journey-list">
-        <span className="section-subtitle">Work Experience</span>
-        <div className="job-list-wrapper">
-          <div className="job-list">
-            <div className="job-title-wrapper">
-              <p className="job-title">Frontend Developer</p>
-              <p className="job-period">Mar 2022 -  Feb 2024</p>
-              <div className="icon-container">
-                <img alt="job-icon" src={JobIcon} />
-              </div>
-            </div>
-            <div className="job-company">
-              <p className="company-title">Blue Bird Group</p>
-              <div className="divider" />
-              <ul className="job-desc">
-                <li>Created KitBird Frontend UI Library that provides reusable component for UI Dashboard</li>
-                <li>Implemented pre-commit husky to prevent common mistake on code and shorten the review code process</li>
-                <li>Implemented micro frontend for reservation website that make development process easier and faster deployment process</li>
-                <li>Built Access Control List (ACL) in the GoldenBird Dashboard to manage user access that will group clients by role</li>
-                <li>Implemented Verdaccio as a private package library that store micro frontend module</li>
-              </ul>
-            </div>
-          </div>
-          <div className="job-list">
-            <div className="job-title-wrapper">
-              <p className="job-title">Full Stack Engineer</p>
-              <p className="job-period">Apr 2020 -  Nov 2021</p>
-              <div className="icon-container">
-                <img alt="job-icon" src={JobIcon} />
-              </div>
-            </div>
-            <div className="job-company">
-              <p className="company-title">CUMI Marketplace</p>
-              <div className="divider" />
-              <ul className="job-desc">
-                <li>Implemented a new design on the login and registration page that improved user experience</li>
-                <li>Migrate the php website/app into responsive single page app using ReactJS that improved responsiveness and multi-platform compatibility</li>
-                <li>Built and integrate an item snapshot page into inquiry to show last data on item when user checkout</li>
-                <li>Created a help center page that provides popular articles to answer common user questions</li>
-                <li>Built a shipping label and integrate with new delivery option AnterAja to provide item package information</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="journey-list">
-        <span className="section-subtitle">Education</span>
-        <div className="job-list-wrapper">
-          <div className="job-list">
-            <div className="education-title-wrapper">
-              <p className="job-title">Undergraduate Student</p>
-              <p className="job-period">Nov 2023 -  Present</p>
-              <div className="icon-container">
-                <img alt="job-icon" src={SchoolIcon} />
-              </div>
-            </div>
-            <div className="job-company">
-              <p className="company-title">Binus University - Jakarta, Indonesia</p>
-              <p className="course-title">Information Systems</p>
-            </div>
-          </div>
-          <div className="job-list">
-            <div className="education-title-wrapper">
-              <p className="job-title">Coding Bootcamp</p>
-              <p className="job-period">Jul 2019 -  Dec 2019</p>
-              <div className="icon-container">
-                <img alt="job-icon" src={SchoolIcon} />
-              </div>
-            </div>
-            <div className="job-company">
-              <p className="company-title">Hacktiv8 Coding Bootcamp - Jakarta, Indonesia</p>
-              <p className="course-title">Full Stack Javascript Immersive</p>
-            </div>
-          </div>
-          <div className="job-list">
-            <div className="education-title-wrapper no-border">
-              <p className="job-title">High School Diploma</p>
-              <p className="job-period">Jul 2015 -  May 2018</p>
-              <div className="icon-container">
-                <img alt="job-icon" src={SchoolIcon} />
-              </div>
-            </div>
-            <div className="job-company">
-              <p className="company-title">SMAN 2 Depok - Jakarta, Indonesia</p>
-              <p className="course-title">Social Sciences</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+    <section id="journey-section" className="section-wrapper">
+      <span className="section-label">My Path</span>
+      <h2 className="section-title">Experience & Education</h2>
+      <p className="section-subtitle">
+        My professional journey in the tech industry
+      </p>
 
-export default Journey;
+      <div className="journey-container container">
+        {/* Work Experience */}
+        <div className="journey-group">
+          <h3 className="journey-group-title">
+            <span className="gradient-text">Work Experience</span>
+          </h3>
+          <div className="timeline">
+            {workExperience.map((job, index) => (
+              <div key={index} className="timeline-item">
+                <div className="timeline-marker">
+                  <div className="timeline-dot">
+                    <img src={job.icon} alt="" className="timeline-icon" />
+                  </div>
+                  {index < workExperience.length - 1 && <div className="timeline-line" />}
+                </div>
+                <div className="timeline-content glass-card">
+                  <span className="timeline-period">{job.period}</span>
+                  <h4 className="timeline-title">{job.title}</h4>
+                  <span className="timeline-company">{job.company}</span>
+                  {job.descriptions && (
+                    <ul className="timeline-list">
+                      {job.descriptions.map((desc, i) => (
+                        <li key={i}>{desc}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Education */}
+        <div className="journey-group">
+          <h3 className="journey-group-title">
+            <span className="gradient-text">Education</span>
+          </h3>
+          <div className="timeline">
+            {education.map((edu, index) => (
+              <div key={index} className="timeline-item">
+                <div className="timeline-marker">
+                  <div className="timeline-dot">
+                    <img src={edu.icon} alt="" className="timeline-icon" />
+                  </div>
+                  {index < education.length - 1 && <div className="timeline-line" />}
+                </div>
+                <div className="timeline-content glass-card">
+                  <span className="timeline-period">{edu.period}</span>
+                  <h4 className="timeline-title">{edu.title}</h4>
+                  <span className="timeline-company">{edu.company}</span>
+                  {edu.course && (
+                    <span className="timeline-course">{edu.course}</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Journey

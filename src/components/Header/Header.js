@@ -1,42 +1,58 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Header.scss'
 
-const styles = {
-  logo: {
-    fontWeight: 800,
-    fontSize: '32px',
-    color: '#111111'
-  },
-  headerMenu: {
-    display: 'flex',
-    flexDirection: 'row',
-    gap: '24px'
-  },
-  headerMenuItem: {
-    fontWeight: 600,
-    fontSize: '16px',
-    color: '#111111',
-    cursor: 'pointer',
-    textDecoration: 'none',
-  },
-  headerMenuItemActive: {
-    fontWeight: 'bold',
-    fontSize: '16px',
-    color: '#1D9BF0'
-  }
-}
-
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const toggleMenu = () => setMenuOpen(!menuOpen)
+  const closeMenu = () => setMenuOpen(false)
+
+  const navItems = [
+    { label: 'Home', href: '#home-section' },
+    { label: 'About', href: '#about-section' },
+    { label: 'Skills', href: '#skill-section' },
+    { label: 'Projects', href: '#projects-section' },
+    { label: 'Experience', href: '#journey-section' },
+    { label: 'Contact', href: '#contact-section' },
+  ]
+
   return (
-    <div className="header-wrapper">
-      <div style={styles.logo}>F.</div>
-      <div className="header-menu">
-        <a href="#home-section" style={styles.headerMenuItem}>HOME</a>
-        <a href="#skill-section" style={styles.headerMenuItem}>SKILLS</a>
-        <a href="#journey-section" style={styles.headerMenuItem}>JOURNEY</a>
-        <a href="#contact-section" style={styles.headerMenuItem}>CONTACT</a>
-      </div>
-    </div>
+    <header className={`header-wrapper ${scrolled ? 'header-scrolled' : ''}`}>
+      <a href="#home-section" className="header-logo">
+        F<span className="logo-dot">.</span>
+      </a>
+      <nav className={`header-nav ${menuOpen ? 'nav-open' : ''}`}>
+        {navItems.map((item) => (
+          <a
+            key={item.label}
+            href={item.href}
+            className="nav-link"
+            onClick={closeMenu}
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+      <button
+        className={`hamburger ${menuOpen ? 'hamburger-active' : ''}`}
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
+      >
+        <span className="hamburger-line" />
+        <span className="hamburger-line" />
+        <span className="hamburger-line" />
+      </button>
+      {menuOpen && <div className="nav-overlay" onClick={closeMenu} />}
+    </header>
   )
 }
 

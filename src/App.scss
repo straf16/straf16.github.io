@@ -1,36 +1,131 @@
-html {
-  scroll-behavior: smooth;
+// ═══════════════════════════════════════
+// Shared Utilities & Section Styles
+// ═══════════════════════════════════════
+
+.App {
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.button {
-  cursor: pointer;
-  padding: 16px 24px;
-  border-radius: 8px;
-  background-color: #1d9bf0;
-  border: none;
-  color: white;
-  font-weight: bold;
-
-  &:hover {
-    opacity: 80%;
-  }
-}
-
+// Section wrapper — mobile first
 .section-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 110vh;
+  padding: var(--spacing-3xl) var(--spacing-md);
+  position: relative;
+
+  @media (min-width: 481px) {
+    padding: var(--spacing-3xl) var(--spacing-xl);
+  }
+
+  @media (min-width: 769px) {
+    padding: var(--spacing-4xl) var(--spacing-2xl);
+  }
+
+  @media (min-width: 1200px) {
+    padding: var(--spacing-4xl) var(--spacing-3xl);
+  }
+}
+
+// Section titles
+.section-label {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
 }
 
 .section-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 8px 0;
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+
+  @media (min-width: 769px) {
+    font-size: var(--font-size-4xl);
+  }
 }
 
 .section-subtitle {
-  font-size: 28px;
-  margin: 8px 0;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: var(--spacing-2xl);
+  line-height: 1.7;
+}
+
+// Container
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Buttons
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  border: none;
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+
+  &.button-primary {
+    background: var(--color-gradient);
+    color: white;
+    box-shadow: var(--shadow-glow);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+    }
+  }
+
+  &.button-outline {
+    background: transparent;
+    color: var(--color-text-primary);
+    border: 1.5px solid var(--color-border);
+
+    &:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Glassmorphism card
+.glass-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+
+  &:hover {
+    border-color: var(--color-border-hover);
+    background: var(--color-bg-card-hover);
+    box-shadow: var(--shadow-md);
+  }
+}
+
+// Gradient text utility
+.gradient-text {
+  background: var(--color-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
